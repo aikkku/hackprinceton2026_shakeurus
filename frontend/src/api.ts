@@ -1,6 +1,4 @@
-import { envApiBase } from "./config";
-
-const apiBase = (): string => envApiBase();
+const apiBase = (): string => "https://seahorse-app-74te5.ondigitalocean.app";
 
 async function parseError(res: Response): Promise<string> {
   const t = await res.text();
